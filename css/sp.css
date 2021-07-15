@@ -150,10 +150,13 @@ footer .footer-reserve {
 /* main-visual */
 .main-visual {
   margin-top: 70px;
-  height: 100vh;
+  height: 500px;
 }
 .vegas-slide-inner {
   background-attachment: local!important;
+}
+.downWrp {
+  top: 480px;
 }
 /* first */
 .first .container .flexbox {
