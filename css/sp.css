@@ -202,6 +202,7 @@ footer .footer-reserve {
  -- sub-main --
 ==========================================================*/
 .sub-main {
+  height: 300px;
   background-attachment: local;
 }
 .sub-main h1 {
@@ -209,7 +210,7 @@ footer .footer-reserve {
   font-size: 40px;
   color: #fff;
   margin-bottom: 0;
-  line-height: 400px;
+  line-height: 300px;
 }
 
 /*==========================================================
