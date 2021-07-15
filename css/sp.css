@@ -1,0 +1,474 @@
+body.noscroll {
+overflow: hidden;
+}
+.pc_none {
+  display: block;
+}
+.sp_none {
+  display: none;
+}
+.container {
+  padding: 50px 20px;
+}
+
+/*==========================================================
+ -- header --
+==========================================================*/
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0.9;
+  height: 70px;
+}
+.site-header .site-logo {
+  width: 240px;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.site-header .nav-wrapper .reserve button {
+  display: block;
+  top: 40px;
+  right: 60px;
+}
+
+/* burger-btn */
+.burger-btn {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+  border: 1px solid;
+}
+.bar {
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bar_top {
+  top: 10px;
+  background-color: #000;
+}
+.bar_mid {
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #000;
+}
+.bar_bottom {
+  bottom: 10px;
+  background-color: #000;
+}
+.burger-btn.close {
+  color: #fff;
+}
+.burger-btn.close .bar_top {
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+  background-color: #fff;
+}
+.burger-btn.close .bar_mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.close .bar_bottom{
+  transform: translate(-50%,-8px) rotate(-45deg);
+  transition: transform .3s;
+  background-color: #fff;
+}
+.bar.close {
+  background-color: #fff;
+}
+/* nav-wrapper */
+.nav-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.nav-wrapper .header-nav {
+  width: 100%;
+  height: 100%;
+  background-color:#1B1310;
+  z-index: 2;
+}
+.nav-wrapper .header-nav .nav-list.flexbox {
+  flex-direction: column;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.nav-wrapper .header-nav .nav-list.flexbox .nav-item {
+  margin-bottom: 20%;
+}
+.nav-wrapper .header-nav .nav-list.flexbox .nav-item.pc_hidden {
+  display: block;
+}
+.nav-wrapper .header-nav .nav-list.flexbox .nav-item a {
+  color: #fff;
+}
+
+/*==========================================================
+ -- footer --
+==========================================================*/
+footer .footer-top.flexbox {
+  flex-direction: column;
+}
+footer .footer-top.flexbox .company-info {
+  margin-bottom: 20px;
+  width: 95%;
+}
+footer .footer-reserve {
+  width: 95%;
+}
+.footer-reserve button .flexbox li a {
+  font-size: 30px;
+}
+.footer-reserve button .flexbox li.reserve-logo  {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/*==========================================================
+ -- top --
+==========================================================*/
+/* main-visual */
+.main-visual {
+  margin-top: 70px;
+  height: 100vh;
+}
+.vegas-slide-inner {
+  background-attachment: local!important;
+}
+/* first */
+.first .container .flexbox {
+  flex-direction: column;
+}
+.first .container .flexbox .first_img {
+  width: 100%;
+}
+.first .container .flexbox .first_content {
+  width: 100%;
+  margin-top: 20px;
+}
+/* campaign_top */
+.campaign_top .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.campaign_top .flexbox {
+  flex-direction: column;
+}
+.campaign_top .flexbox a {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.campaign_top .flexbox a:last-child {
+  margin-bottom: 0;
+}
+
+/* hair-catalog_top */
+.hair-catalog_top ul li {
+  width: 30%;
+}
+/* pickup */
+.pickup .flexbox li {
+  width: 48%;
+}
+.pickup .flexbox li.sns {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/*==========================================================
+ -- sub-main --
+==========================================================*/
+.sub-main h1 {
+  margin-top: 90px;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 400px;
+}
+
+/*==========================================================
+ -- consept --
+==========================================================*/
+h1.consept-h1 {
+  margin-top: 50px;
+}
+.consept {
+  background-image: none;
+}
+.consept .consept_box {
+  background: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: none;
+  display: block;
+}
+/* consept-sub */
+.consept-sub {
+  margin-top: 50px;
+}
+.consept-sub .flexbox {
+  flex-direction: column;
+}
+.consept-sub .consept-sub01,
+.consept-sub .consept-sub02 {
+  margin-bottom: 50px;
+}
+.consept-sub .flexbox .consept-sub_content {
+  width: 80%;
+}
+.consept-sub .flexbox .consept-sub_img {
+  width: 100%;
+}
+
+/*==========================================================
+ -- first-visit --
+==========================================================*/
+.speech .flexbox {
+  flex-direction: column;
+}
+.speech .flexbox .speech-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+}
+.speech .flexbox .speech-img p {
+  text-align: right;
+}
+.speech .flexbox .speech-content {
+  width: 100%;
+  margin-top: 50px;
+}
+.first-visit .flexbox {
+  flex-wrap: wrap;
+}
+.first-visit .flexbox .a {
+  width: 100%;
+}
+.first-visit .flexbox .message2,
+.first-visit .flexbox .flow {
+  text-align: center;
+  margin-top: 50px;
+}
+.first-visit .flexbox .message2 .flexbox button,
+.first-visit .flexbox .flow button {
+  width: 70%;
+}
+.first-visit .flexbox .message2 .flexbox button:last-child {
+  margin-top: 20px;
+}
+
+/*==========================================================
+ -- flow --
+==========================================================*/
+.flow-main .flexbox {
+  flex-direction: column;
+}
+.flow_img {
+  width: 100%;
+}
+.flow_content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*==========================================================
+ -- hair-catalog --
+==========================================================*/
+.style-select a {
+  width: 50%;
+}
+.hair-smn li {
+  width: 48%;
+}
+.hair-smn li:last-child {
+  margin-top: 50px;
+}
+
+/*==========================================================
+ -- hair-catalog_detail --
+==========================================================*/
+.hair-catalog_detail .flexslider {
+  width: 80%;
+  margin: 0 auto;
+}
+.hair-catalog_detail .hair-catalog_content {
+  width: 100%;
+  margin: 50px auto 0 auto;
+}
+.hair-catalog_detail .staff-mini {
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+/*==========================================================
+ -- menu --
+==========================================================*/
+.menu .flexbox {
+  flex-direction: column;
+}
+.menu .flexbox dl {
+  width: 100%;
+}
+
+/*==========================================================
+ -- salon --
+==========================================================*/
+.salon .flexbox {
+  flex-direction: column;
+}
+.salon .salon_img,
+.salon .salon_content {
+  width: 100%;
+}
+.salon .salon_content {
+  margin-top: 20px;
+}
+
+/*==========================================================
+ -- item --
+==========================================================*/
+.item .item-flex {
+  flex-direction: column;
+}
+.item .item-img-content {
+  width: 100%;
+}
+.item .item-img-content:last-child {
+  margin-bottom: 0;
+}
+.item .item-styling .item-img-content:last-child {
+  margin-top: 20px;
+}
+.item .item-tleatment,
+.item .item-styling {
+  margin-top: 50px;
+}
+
+/*==========================================================
+ -- staff --
+==========================================================*/
+.staff .staff-kind .flexbox {
+  justify-content: space-between;
+}
+.staff .staff-kind .staff-item {
+  width: 48%;
+  margin-right: 0;
+}
+.staff .staff-kind:last-child .staff-item:last-child {
+  margin-top: 20px;
+}
+.staff .staff-kind .staff-item p {
+  font-size: 24px;
+}
+.staff .staff-kind .staff-item .staff-sns {
+  width: 135px;
+  margin-left: 20px;
+}
+.staff .staff-kind .staff-item .staff-sns li img {
+  width: 40px;
+  height: 40px;
+}
+
+/*==========================================================
+ -- staff_detail --
+==========================================================*/
+.staff_detail .flexbox {
+  flex-direction: column;
+}
+.staff_detail .flexbox .staff_detail_img {
+  width: 100%;
+}
+.staff_detail .flexbox .staff_detail_content {
+  margin-top: 20px;
+  width: 100%;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex.flexbox {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex.flexbox ul.staff-sns.flexbox {
+  flex-direction: row;
+}
+.staff-style .hair-smn li:last-child {
+  margin-top: 0;
+}
+
+/*==========================================================
+ -- sitemap --
+==========================================================*/
+.sitemap .flexbox li {
+  width: 48%;
+}
+.sitemap .flexbox li:last-child {
+  margin-bottom: 0;
+}
+
+/*==========================================================
+ -- recruit --
+==========================================================*/
+.recruit .content .flexbox {
+  flex-direction: column;
+}
+.recruit .content .flexbox button {
+  width: 70%;
+}
+
+/*==========================================================
+ -- contact --
+==========================================================*/
+.contact-form .contactTable td,
+.contact-form .contactTable td input,
+.contact-form .contactTable td select {
+  width: 100%;
+}
+.contact-form .formBtns.flexbox {
+  flex-direction: column;
+}
+.contact-form .formBtns input[type="submit"] {
+  margin-top: 20px;
+}
+
+/*==========================================================
+ -- mypage --
+==========================================================*/
+.mypage .flexbox {
+  flex-direction: column;
+}
+.mypage .flexbox .mypage-tel,
+.mypage .flexbox .mypage-reserve {
+  margin-bottom: 20px;
+}
+.mypage .mypage-nav {
+  padding-left: 20px;
+}
+.mypage .mypage-nav .flexbox {
+  flex-direction: column;
+  display:inline-block;
+}
+.mypage .mypage-nav .flexbox li {
+  margin-bottom: 20px;
+}
+.mypage .mypage-nav .flexbox li:last-child {
+  margin-bottom: 0;
+}
