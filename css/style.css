@@ -1,0 +1,1181 @@
+* {
+  font-family: yumincho, "Kozuka Gothic Pro M", Meiryo, Osaka, sans-serif;
+  line-height: 1.8;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  color: #000;
+}
+body {
+  background-color: #fff;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+h2 {
+  position: relative;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+h2.h2_title {
+  border: 1px solid;
+  background-color: #F7F7F7;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+h2.h2_title:first-child {
+  margin-top: 0;
+}
+h2.h2_title::before {
+  display: none;
+}
+h3 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  font-size: 18px;
+  text-align: left;
+}
+li {
+  font-size: 14px;
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+  border: none;
+  padding: 0;
+  background-color: #fff;
+}
+button a {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+.pc_none {
+  display: none;
+}
+.sp-none {
+  display: block;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+/*==========================================================
+ -- flexbox --
+==========================================================*/
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexbox_reverse {
+  flex-direction: row-reverse;
+}
+
+/*==========================================================
+ -- header --
+==========================================================*/
+.site-header {
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 40%);
+  background-color: #fff;
+}
+.site-header .site-logo {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 340px;
+  height: 70px;
+}
+.site-header .site-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px 0 20px;
+}
+.site-header .site-nav ul {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-header .site-nav ul.nav-list li.nav-item.pc_hidden {
+  display: none;
+}
+.site-header .reserve button {
+  width: 170px;
+  height: 60px;
+  background-color: #c38994;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 11;
+  border: none;
+}
+.site-header .reserve button a {
+  font-size: 24px;
+  color: #fff;
+}
+.site-header .reserve button .flexbox {
+  justify-content: center;
+}
+.site-header .reserve button .flexbox li.reserve-logo  {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.burger-btn{
+  display: none;
+}
+.header-left .flexbox {
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 60px;
+}
+.header-left .flexbox button {
+  width: 170px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.header-left .flexbox button a {
+  color: #000;
+}
+
+/*==========================================================
+ -- cb-header --
+==========================================================*/
+.cb-header {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  background-color: #fff;
+  width: 100%;
+  color: #fff;
+  height: 70px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 40%);
+  z-index: 1;
+}
+.cb-header .flexbox {
+  align-items: center;
+  padding: 10px 0;
+}
+.cb-header .site-nav {
+  padding-left: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+.cb-header .site-nav ul {
+  flex-wrap: wrap;
+}
+.cb-header .reserve {
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.cb-header .reserve button {
+  width: 130px;
+  height: 50px;
+  background-color: #c38994;
+  border-radius: 10px;
+  border: none;
+}
+.cb-header .reserve button a {
+  font-size: 18px;
+  color: #fff;
+}
+.cb-header .reserve .flexbox {
+  justify-content: center;
+}
+.cb-header .reserve button .flexbox li.reserve-logo  {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/*==========================================================
+ -- footer --
+==========================================================*/
+footer .footer-top.flexbox {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+footer .flexbox .company-info {
+  width: 45%;
+}
+footer .flexbox .company-info h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+footer .flexbox .company-info h2::before {
+  display: none;
+}
+footer .flexbox .company-info li {
+  font-size: 18px;
+}
+.footer-reserve {
+  width: 45%;
+}
+.footer-reserve button {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer-reserve button:last-child {
+  margin-top: 10px;
+}
+.footer-reserve button.webreserve {
+  background-color: #c38994;
+  color: #fff;
+}
+.footer-reserve button.webreserve a {
+  color: #fff;
+}
+.footer-reserve button .flexbox {
+  justify-content: center;
+}
+.footer-reserve button .flexbox li a {
+  font-size: 38px;
+}
+.footer-reserve button .flexbox li.reserve-logo  {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.footer-nav {
+  padding: 0;
+}
+.footer-nav ul.flexbox {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-nav ul.flexbox li {
+  padding: 1em;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/*==========================================================
+ -- top --
+==========================================================*/
+/* main-visual */
+.main-visual {
+  width: 100%;
+  height: 100vh;
+}
+.vegas-slide-inner {
+  background-attachment: fixed!important;
+}
+.downWrp{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 3;
+}
+.down {
+	position: relative;
+	text-align: center;
+}
+.down span {
+  color: #fff;
+}
+.down span::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	top: 49px;
+	left:50%;
+	transform:translate(-50%,0) rotate(45deg);
+	animation: arrowdown 2s infinite;
+}
+.down span::after{
+	content: "";
+	height: 30px;
+	border-left: 1px solid #fff;
+	position: absolute;
+	top: 30px;
+	left:50%;
+	transform:translate(-50%,0);
+	animation: linedown 2s infinite;
+}
+@keyframes linedown {
+  0% {
+    top:20px;
+  }
+  20% {
+    top:30px;
+  }
+  40% {
+    top:20px;
+  }
+}
+@keyframes arrowdown {
+  0% {
+    top:39px;
+  }
+  20% {
+    top:49px;
+  }
+  40% {
+    top:39px;
+  }
+}
+/* first-visit */
+.first {
+  background: #F9F9F9;
+}
+.first .flexbox .first_img {
+  width: 48%;
+}
+.first .flexbox .first_content {
+  width: 48%;
+  text-align: center;
+}
+.first .flexbox .first_content button {
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #c38994;
+  box-shadow: 0 0 20px rgb(0 0 0 / 60%);
+}
+.first .flexbox .first_content button a {
+  font-size: 20px;
+}
+/* hair-catalog */
+.hair-catalog_top {
+  text-align: center;
+}
+.hair-catalog_top .flexbox {
+  flex-wrap: wrap;
+}
+.hair-catalog_top ul li {
+  width: 21.25%;
+  margin-bottom: 50px;
+}
+.hair-catalog_top ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.hair-catalog_top button {
+  width: 100%;;
+  height: 40px;
+  font-size: 18px;
+  background-color: #fff;
+}
+/* information */
+.information .information-box {
+  border: 1px solid;
+  padding: 20px;
+}
+.information .information-box dl.flexbox {
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.information .information-box dl.flexbox:last-child {
+  margin-bottom: 0;
+}
+.information .information-box dl.flexbox dd {
+  padding-left: 5%;
+}
+/* campaign */
+.campaign_top {
+  text-align: center;
+  background-color: #8F8075;
+}
+.campaign_top .container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.campaign_top h2 {
+  color: #fff;
+}
+.campaign_top h2::before {
+  background: #fff;
+}
+.campaign_top .flexbox a {
+  width: 45%;
+}
+/* pickup */
+.pickup {
+  background-color: #F7F7F7;
+}
+.pickup .flexbox {
+  flex-wrap: wrap;
+}
+.pickup .flexbox li {
+  width: 30%;
+  margin-bottom: 50px;
+}
+.pickup .flexbox li:nth-child(n+7) {
+  margin-bottom: 0;
+}
+.pickup .sns ul.flexbox {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  position:relative;
+  top: 10px;
+}
+.pickup .sns ul.flexbox li {
+  width: 20%;
+  height: auto;
+  margin-bottom: 0;
+}
+.pickup .sns ul.flexbox li a {
+  padding: 0;
+  position: static;
+  background: none;
+  box-shadow: none;
+}
+.pickup .cs-style-2 .sns figure .flexbox li img {
+  position: static;
+}
+.no-touch .cs-style-2 .sns figure:hover .flexbox img,
+.cs-style-2 .sns figure.cs-hover .flexbox img {
+  -webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+
+/*==========================================================
+ -- sub-main --
+==========================================================*/
+.sub-main {
+  height: 400px;
+  background-image: url(../src2/4888049_m.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+.sub-main h1 {
+  font-size: 72px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 400px;
+  text-shadow: 4px  4px 1px #000000;
+}
+
+/*==========================================================
+ -- consept --
+==========================================================*/
+.consept {
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-image: url(../src2/4629851_m.jpg);
+  margin-top: 100px;
+}
+.consept_box {
+  text-align: center;
+  margin: 5% 0 5% 3%;
+  padding: 2% 5%;
+  height: auto;
+  display: inline-block;
+  max-width: 650px;
+  width: 100%;
+  background: rgba(247,247,247,0.7);
+}
+
+.consept-title {
+  font-size: 48px;
+}
+.consept_box p {
+  text-align: left;
+}
+/* consept-sub */
+.consept-sub {
+  margin-top: 100px;
+  background-color: #F7F7F7;
+}
+.consept-sub h1{
+  font-size: 72px;
+  margin-bottom: 0;
+  text-align: left;
+  border-bottom: none;
+}
+.consept-sub .flexbox .consept-sub_content {
+  width: 50%;
+}
+.consept-sub .flexbox .consept-sub_img {
+  width: 40%;
+}
+/*==========================================================
+ -- fadeIn --
+==========================================================*/
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 1s;
+}
+.fadeIn_up.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+/*==========================================================
+ -- first-visit --
+==========================================================*/
+.speech .flexbox {
+  align-items: flex-start;
+}
+.speech .flexbox .speech-img {
+  text-align: center;
+  width: 40%;
+}
+.speech .flexbox .speech-content {
+  width: 55%;
+}
+.speech .flexbox .speech-content p:last-child {
+  margin-top: 5px;
+}
+.first-visit {
+  background-color: #F9F9F9;
+}
+.first-visit h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.first-visit .flexbox {
+  align-items: flex-start;
+}
+.first-visit .flexbox .a {
+  width: 32%;
+}
+.first-visit .flow {
+  text-align: center;
+}
+.first-visit .message2,
+.first-visit .flow {
+  margin-top: 0;
+  text-align: center;
+}
+.first-visit .a button {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*==========================================================
+ -- campaign --
+==========================================================*/
+.campaign .campaign_detail {
+  border: 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.campaign .campaign_detail:last-child {
+  margin-bottom: 0;
+}
+.campaign h2 {
+  border: none;
+  border-bottom: 1px solid;
+}
+.campaign dt {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.campaign dd {
+  font-size: 18px;
+  padding-left: 40px;
+}
+.campaign .campaign_detail .conditions {
+  margin-top: 30px;
+}
+
+/*==========================================================
+ -- flow --
+==========================================================*/
+.flow-main .flexbox {
+  margin-bottom: 50px;
+}
+.flow-main .flexbox:last-child {
+  margin-bottom: 0;
+}
+.flow_img {
+  width: 40%;
+}
+.flow_img img {
+  display: block;
+}
+.flow_content {
+  width: 55%;
+}
+.flow_content h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+.flow_content h2::before {
+  display: none;
+}
+/*==========================================================
+ -- hair-catalog --
+==========================================================*/
+.hair-catalog .flexbox {
+  flex-wrap: wrap;
+  text-align: center;
+}
+.style-select a {
+  width: 25%;
+  border: 1px solid;
+  padding: 7.5px 0;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+.hair-smn {
+  margin-top: 100px;
+}
+.hair-smn li {
+  width: 30%;
+  margin-bottom: 50px;
+}
+.hair-smn li:nth-child(n+7) {
+  margin-bottom: 0;
+}
+
+/*==========================================================
+ -- hair-catalog_detail --
+==========================================================*/
+.hair-catalog_detail {
+  margin-top: 100px;
+}
+.hair-catalog_detail .flexslider {
+  width: 45%;
+}
+.hair-catalog_detail .hair-catalog_content {
+  width: 45%
+}
+.slides li {
+  text-align: center;
+}
+.hair-catalog_content .point {
+  margin-top: 40px;
+}
+.hair-catalog_content dl {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.hair-catalog_content dt {
+  width: 20%;
+  margin-right: 5px;
+  background-color: #f7f7f7;
+}
+.hair-catalog_content dd {
+  margin-left: 5px;
+}
+.hair-catalog_content .content4 dd{
+  width: 15%;
+}
+.hair-catalog_content .content3 dd{
+  width: 23%;
+}
+.hair-catalog_content .content14 dd{
+  width: 7%;
+}
+.hair-catalog_content dd.on {
+  background-color: #d1d1d1;
+}
+.hair-catalog_content dd.off {
+  background-color: #f7f7f7;
+}
+.hair-catalog_content .staff-mini {
+  margin-top: 50px;
+  padding: 5%;
+  border: 1px solid;
+}
+.hair-catalog_content .staff-mini_img {
+  width: 40%;
+}
+.hair-catalog_content .staff-mini_img img {
+  width: 100%;
+}
+.hair-catalog_content .staff-mini_content {
+  width: 58%;
+}
+
+/*==========================================================
+ -- menu --
+==========================================================*/
+.menu p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.menu .flexbox {
+  flex-wrap: wrap;
+}
+.menu h2 {
+  border: 1px solid;
+  background-color: #F7F7F7;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.menu dl {
+  display: flex;
+  width: 48%;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.menu dl:nth-child(n+5) {
+  margin-bottom: 0;
+}
+.menu span {
+  font-size: 18px;
+  padding-left: 20px;
+}
+.menu .menu-campaign span a {
+  color: red;
+}
+
+/*==========================================================
+ -- salon --
+==========================================================*/
+.salon .salon_img {
+  width: 55%;
+}
+.salon .salon_content {
+  width: 43%;
+}
+.salon .salon_google-map {
+  margin-top: 50px;
+}
+.salon .salon-pickup {
+  margin-bottom: 100px;
+}
+.salon .salon-pickup.jiyugaoka {
+  margin-bottom: 0;
+}
+.salon .salon-pickup h2 {
+  border: 1px solid;
+  background-color: #F7F7F7;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/*==========================================================
+ -- item --
+==========================================================*/
+.item .item-flex {
+  flex-wrap: wrap;
+}
+.item .item-img-content {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.item .item-styling .item-img-content {
+  margin-bottom: 0;
+}
+.item .item_img {
+  width: 35%;
+}
+.item .item_content {
+  width: 60%;
+}
+.item .item-tleatment,
+.item .item-styling {
+  margin-top: 30px;
+}
+
+/*==========================================================
+ -- staff --
+==========================================================*/
+.staff h2 {
+  margin-bottom: 20px;
+}
+.staff .staff-kind .flexbox {
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.staff .staff-kind .staff-item {
+  width: 22%;
+  margin-bottom: 50px;
+  margin-right: 4%;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.staff .staff-kind:last-child .staff-item {
+  margin-bottom: 0;
+}
+.staff .staff-kind .staff-item:nth-child(4n) {
+  margin-right: 0;
+}
+.staff .staff-kind .staff-item p {
+  text-align: center;
+}
+.staff .staff-kind .staff-item .staff-sns {
+  justify-content: left;
+  width: 75px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.staff-item .staff-sns li {
+  margin-right: 5px;
+}
+.staff-item .staff-sns li img {
+  width: 20px;
+  height: 20px;
+}
+
+/*==========================================================
+ -- staff_detail --
+==========================================================*/
+.staff_detail .flexbox .staff_detail_img {
+  width: 48%;
+}
+.staff_detail .flexbox .staff_detail_content {
+  width: 48%;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex.flexbox {
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  align-items: flex-end;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex .staff-sns {
+  padding-bottom: 5px;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex .staff-sns li {
+  margin-left: 5px;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex .staff-sns li img {
+  width: 40px;
+  height: 40px;
+}
+.staff-style .flexbox {
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+/*==========================================================
+ -- question --
+==========================================================*/
+.question {
+  text-align: center;
+}
+.question button {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 200px;
+  height: 40px;
+}
+.question h3 {
+  text-align: left;
+}
+.question .about-reserve p,
+.question .about-item p {
+  margin-bottom: 20px;
+}
+.question .about-reserve p:last-child,
+.question .about-item p:last-child {
+  margin-bottom: 0;
+}
+.question .about-item a {
+  color: red;
+}
+
+/*==========================================================
+ -- sitemap --
+==========================================================*/
+.sitemap .flexbox {
+  flex-wrap: wrap;
+}
+.sitemap .flexbox li {
+  font-size: 18px;
+  width: 30%;
+  margin-bottom: 50px;
+  border-bottom: 1px solid;
+}
+
+/*==========================================================
+ -- company --
+==========================================================*/
+.company dl:nth-child(2n+1) {
+  background-color: #F7F7F7;
+}
+.company dl.flexbox {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.company dl.flexbox:last-child {
+  margin-bottom: 0;
+}
+.company .flexbox dt {
+  width: 20%;
+  text-align: center;
+}
+.company .flexbox dd {
+  width: 75%;
+}
+
+/*==========================================================
+ -- privacypollisy --
+==========================================================*/
+.pribacypollisy > p {
+  margin-bottom: 60px;
+}
+.pribacypollisy .content {
+  margin-bottom: 50px;
+}
+.pribacypollisy .content:last-child {
+  margin-bottom: 0;
+}
+
+/*==========================================================
+ -- contact --
+==========================================================*/
+.contact p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact-form .contactTable {
+  width: 100%;
+}
+.contact-form .contactTable tr {
+  border: 1px solid;
+}
+.contact-form .contactTable th {
+  width: 30%;
+  vertical-align: middle;
+  border: 1px solid;
+  background-color: #f7f7f7;
+}
+.contact-form .contactTable td {
+  width: 70%;
+  padding: 10px 20px;
+  border: 1px solid;
+}
+.contact-form .contactTable td input,
+.contact-form .contactTable td select {
+  width: 70%;
+  height: 35px;
+  border-radius: 10px;
+}
+.contact-form .contactTable td textarea {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.contact-form .formBtns.flexbox {
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+.contact-form .formBtns input {
+  width: 200px;
+  height: 40px;
+  margin: 0 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+  border: none;
+  font-size: 16px;
+}
+.contact-form .formBtns input[type="submit"] {
+  background-color: #c38994;
+}
+
+/*==========================================================
+ -- new --
+==========================================================*/
+.new p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.new .new_radio .flexbox {
+  justify-content: left;
+}
+.contact-form .contactTable td {
+  border: none;
+}
+.contact-form .contactTable .radio div {
+  margin-right: 10px;
+}
+.contact-form .contactTable .radio input{
+  width: 20px;
+  margin: 0 5px 0 0;
+}
+
+/*==========================================================
+ -- reserve --
+==========================================================*/
+.reserve-main {
+  text-align: center;
+}
+.reserve-main h1 {
+  max-width: 1000px;
+}
+.reserve-new,
+.reserve-notnew {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+.reserve-new {
+  margin-top: 50px;
+}
+.reserve-new h3,
+.reserve-notnew h3 {
+  text-align: left;
+}
+.reserve-new button,
+.reserve-notnew button {
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.reserve-new p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*==========================================================
+ -- mypage-login --
+==========================================================*/
+.mypage-login {
+  text-align: center;
+}
+.mypage-login .login {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+.mypage-login .login h2 {
+  margin-bottom: 30px;
+}
+.mypage-login .login input {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.mypage-login .login button {
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.mypage-login .login p {
+  text-align: center;
+  margin-top: 20px;
+}
+.mypage-login .login p a {
+  color: red;
+}
+
+/*==========================================================
+ -- mypage --
+==========================================================*/
+.mypage .mypage-info {
+  margin-top: 100px;
+}
+.mypage .mypage-info p {
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+.mypage .mypage-nav {
+  margin-top: 100px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+.mypage .mypage-nav .flexbox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*==========================================================
+ -- recruit --
+==========================================================*/
+.recruit > p {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.recruit .content {
+  margin-bottom: 50px;
+}
+.recruit .content:last-child {
+  margin-bottom: 0;
+}
+.recruit .content .recruit_detail {
+  width: 100%;
+}
+.recruit .content .recruit_detail tr {
+  border: 1px solid;
+}
+.recruit .content .recruit_detail th {
+  width: 30%;
+  vertical-align: middle;
+  border: 1px solid;
+}
+.recruit .content .recruit_detail td {
+  width: 70%;
+  padding: 10px 20px;
+  border: 1px solid;
+}
+.recruit .content .flexbox button {
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.recruit .content .flexbox button a {
+  font-size: 20px;
+}
