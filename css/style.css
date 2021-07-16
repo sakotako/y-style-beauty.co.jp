@@ -1,5 +1,5 @@
 * {
-  font-family: yumincho, "Kozuka Gothic Pro M", Meiryo, Osaka, sans-serif;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   line-height: 1.8;
   box-sizing: border-box;
 }
@@ -744,6 +744,9 @@ footer .copyright {
   text-align: center;
   margin-bottom: 60px;
 }
+.menu > div {
+  margin-top: 30px;
+}
 .menu .flexbox {
   flex-wrap: wrap;
 }
@@ -889,6 +892,13 @@ footer .copyright {
 .staff-style .flexbox {
   flex-wrap: wrap;
   margin-top: 0;
+}
+
+/*==========================================================
+ -- gallery --
+==========================================================*/
+.gallery {
+  background-color: #000
 }
 
 /*==========================================================
