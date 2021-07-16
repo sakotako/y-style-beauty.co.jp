@@ -190,11 +190,16 @@ footer .footer-reserve {
   width: 30%;
 }
 /* pickup */
+.pickup .flexbox {
+  justify-content: center;
+}
 .pickup .flexbox li {
-  width: 48%;
+  width: 80%;
+}
+.pickup .flexbox li:nth-child(n+7) {
+  margin-bottom: 50px;
 }
 .pickup .flexbox li.sns {
-  margin-top: 50px;
   margin-bottom: 0;
 }
 
