@@ -194,6 +194,9 @@ footer .footer-reserve {
   width: 48%;
   border: 1px solid;
 }
+.pickup .flexbox li h3 {
+  font-size: 18px;
+}
 .pickup .flexbox li.sns {
   border: none;
 }
