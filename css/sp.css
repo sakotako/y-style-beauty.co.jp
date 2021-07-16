@@ -190,17 +190,22 @@ footer .footer-reserve {
   width: 30%;
 }
 /* pickup */
-.pickup .flexbox {
-  justify-content: center;
-}
 .pickup .flexbox li {
-  width: 80%;
-}
-.pickup .flexbox li:nth-child(n+7) {
-  margin-bottom: 50px;
+  width: 48%;
+  border: 1px solid;
 }
 .pickup .flexbox li.sns {
+  border: none;
+}
+.pickup .flexbox li.sns li {
+  border: none;
+}
+.pickup .flexbox li.sns {
+  margin-top: 50px;
   margin-bottom: 0;
+}
+.pickup .flexbox li.sns ul.flexbox {
+  margin-bottom: 20px;
 }
 
 /*==========================================================
