@@ -748,7 +748,6 @@ footer .copyright {
   margin-top: 30px;
 }
 .menu .flexbox {
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .menu h2 {
@@ -760,6 +759,7 @@ footer .copyright {
 }
 .menu dl {
   display: flex;
+  justify-content: space-between;
   width: 48%;
   border-bottom: 1px solid;
   margin-bottom: 20px;
