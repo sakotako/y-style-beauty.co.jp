@@ -659,11 +659,11 @@ footer .copyright {
   text-align: center;
 }
 .style-select a {
-  width: 25%;
+  width: calc(25% + 1px);
   border: 1px solid;
   padding: 7.5px 0;
   font-size: 24px;
-  box-sizing: border-box;
+  margin-left: -1px;
 }
 .hair-smn {
   margin-top: 100px;
@@ -694,6 +694,12 @@ footer .copyright {
 .hair-catalog_content .point {
   margin-top: 40px;
 }
+.hair-catalog_detail .hair-catalog_content h2 {
+  margin-bottom: 20px;
+}
+.hair-catalog_detail .hair-catalog_content h2::before {
+    display: none;
+}
 .hair-catalog_content dl {
   display: flex;
   width: 100%;
@@ -714,7 +720,7 @@ footer .copyright {
   width: 23%;
 }
 .hair-catalog_content .content14 dd{
-  width: 7%;
+  width: 6%;
 }
 .hair-catalog_content dd.on {
   background-color: #d1d1d1;
@@ -726,6 +732,9 @@ footer .copyright {
   margin-top: 50px;
   padding: 5%;
   border: 1px solid;
+}
+.hair-catalog_content .staff-mini p {
+  font-size: 14px;
 }
 .hair-catalog_content .staff-mini_img {
   width: 40%;
@@ -759,7 +768,6 @@ footer .copyright {
 }
 .menu dl {
   display: flex;
-  justify-content: space-between;
   width: 48%;
   border-bottom: 1px solid;
   margin-bottom: 20px;
@@ -899,7 +907,7 @@ footer .copyright {
  -- gallery --
 ==========================================================*/
 .gallery {
-  background-color: #110000;
+  background-color: #110000	;
 }
 
 /*==========================================================
