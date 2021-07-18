@@ -728,21 +728,16 @@ footer .copyright {
 .hair-catalog_content dd.off {
   background-color: #f7f7f7;
 }
-.hair-catalog_content .staff-mini {
-  margin-top: 50px;
+.staff-mini {
+  width: 80%;
+  margin: 50px auto 0 auto;
   padding: 5%;
   border: 1px solid;
 }
-.hair-catalog_content .staff-mini p {
-  font-size: 14px;
-}
-.hair-catalog_content .staff-mini_img {
+.staff-mini .staff-mini_img {
   width: 40%;
 }
-.hair-catalog_content .staff-mini_img img {
-  width: 100%;
-}
-.hair-catalog_content .staff-mini_content {
+.staff-mini .staff-mini_content {
   width: 58%;
 }
 
