@@ -68,7 +68,7 @@ img {
 button {
   cursor: pointer;
   text-align: center;
-  box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+  box-shadow: 0 0 5px rgb(0 0 0 / 40%);
   border: none;
   padding: 0;
   background-color: #fff;
@@ -376,7 +376,7 @@ footer .copyright {
   text-align: center;
   margin-top: 20px;
   background-color: #c38994;
-  box-shadow: 0 0 20px rgb(0 0 0 / 60%);
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
 }
 .first .flexbox .first_content button a {
   font-size: 20px;
@@ -777,7 +777,7 @@ footer .copyright {
   padding-left: 20px;
 }
 .menu .menu-campaign span a {
-  color: red;
+  color: #c38994;
 }
 
 /*==========================================================
@@ -1030,7 +1030,7 @@ footer .copyright {
   border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
-  box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+  box-shadow: 0 0 5px rgb(0 0 0 / 40%);
   border: none;
   font-size: 16px;
 }
@@ -1131,7 +1131,7 @@ footer .copyright {
   margin-top: 20px;
 }
 .mypage-login .login p a {
-  color: red;
+  color: #c38994;
 }
 
 /*==========================================================
