@@ -343,9 +343,16 @@ footer .footer-reserve {
   width: 100%;
   margin: 50px auto 0 auto;
 }
-.hair-catalog_detail .staff-mini {
+.staff-mini.flexbox {
   width: 100%;
-  margin: 50px auto 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.staff-mini .staff-mini_content {
+  width: 100%;
+}
+.staff-mini .staff-mini_content p {
+  font-size:14px; 
 }
 
 /*==========================================================
