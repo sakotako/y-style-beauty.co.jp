@@ -466,6 +466,12 @@ footer .footer-reserve {
 /*==========================================================
  -- contact --
 ==========================================================*/
+.contact-form .contactTable th {
+  width: 40%;
+}
+.contact-form .contactTable td {
+  width: 60%;
+}
 .contact-form .contactTable td,
 .contact-form .contactTable td input,
 .contact-form .contactTable td select {
@@ -483,6 +489,7 @@ footer .footer-reserve {
 ==========================================================*/
 .new .new_radio .flexbox {
   flex-direction: column;
+  align-items: flex-start;
 }
 .contact-form .contactTable .radio div {
   margin-right: 0;
