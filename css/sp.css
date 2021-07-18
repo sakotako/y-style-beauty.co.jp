@@ -325,7 +325,8 @@ footer .footer-reserve {
  -- hair-catalog --
 ==========================================================*/
 .style-select a {
-  width: 50%;
+  width: calc(50% + 1px);
+  margin-top: -1px;
 }
 .hair-smn li {
   width: 48%;
@@ -346,7 +347,7 @@ footer .footer-reserve {
   margin: 50px auto 0 auto;
 }
 .hair-catalog_detail .staff-mini {
-  width: 70%;
+  width: 100%;
   margin: 50px auto 0 auto;
 }
 
