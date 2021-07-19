@@ -896,6 +896,12 @@ footer .copyright {
 .staff_detail .flexbox .staff_detail_content {
   width: 48%;
 }
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex .staff-name h2 {
+  margin-bottom: 0;
+}
+.staff_detail .flexbox .staff_detail_content .staff_detail_content_flex .staff-name h2::before {
+  display: none;
+}
 .staff_detail .flexbox .staff_detail_content .staff_detail_content_flex.flexbox {
   margin-bottom: 20px;
   border-bottom: 1px solid;
