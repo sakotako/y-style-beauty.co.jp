@@ -159,7 +159,7 @@
 
     <section class="consept-sub">
       <div class="container">
-        <div class="consept-sub01 flexbox inview fadeIn_up">
+        <div class="consept-sub01 flexbox inview fadeIn_left">
           <div class="consept-sub_img">
             <img src="src/1539601_s.jpg" alt="">
           </div>
@@ -171,7 +171,7 @@
               <br>これが私たちY-Style-Beautyの願いでありコンセプトであります。</p>
           </div>
         </div>
-        <div class="consept-sub02 flexbox flexbox_reverse inview fadeIn_up">
+        <div class="consept-sub02 flexbox flexbox_reverse inview fadeIn_right">
           <div class="consept-sub_img">
             <img src="src/4686806_s.jpg" alt="">
           </div>
@@ -183,7 +183,7 @@
               <br>これが私たちY-Style-Beautyの願いでありコンセプトであります。</p>
           </div>
         </div>
-        <div class="consept-sub03 flexbox inview fadeIn_up">
+        <div class="consept-sub03 flexbox inview fadeIn_left">
           <div class="consept-sub_img">
             <img src="src/4797452_s.jpg" alt="">
           </div>
@@ -267,6 +267,8 @@ $(function(){
   $(".inview").on("inview", function (event, isInView) {
     if (isInView) {
       $(this).stop().addClass("is-show");
+    } else {
+      $(this).stop().removeClass("is-show");
     }
   });
 });
