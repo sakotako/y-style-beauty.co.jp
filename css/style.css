@@ -921,6 +921,11 @@ footer .copyright {
 .question h3 {
   text-align: left;
 }
+.question .about-cut,
+.question .about-color,
+.question .about-item {
+  margin-top: 50px;
+}
 .question .about-reserve p,
 .question .about-item p {
   margin-bottom: 20px;
@@ -930,7 +935,7 @@ footer .copyright {
   margin-bottom: 0;
 }
 .question .about-item a {
-  color: red;
+  color: #c38994;
 }
 
 /*==========================================================
@@ -944,6 +949,46 @@ footer .copyright {
   width: 30%;
   margin-bottom: 50px;
   border-bottom: 1px solid;
+}
+
+/*==========================================================
+ -- recruit --
+==========================================================*/
+.recruit > p {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.recruit .content {
+  margin-bottom: 50px;
+}
+.recruit .content:last-child {
+  margin-bottom: 0;
+}
+.recruit .content .recruit_detail {
+  width: 100%;
+}
+.recruit .content .recruit_detail tr {
+  border: 1px solid;
+}
+.recruit .content .recruit_detail th {
+  width: 30%;
+  vertical-align: middle;
+  border: 1px solid;
+}
+.recruit .content .recruit_detail td {
+  width: 70%;
+  padding: 10px 20px;
+  border: 1px solid;
+}
+.recruit .content .flexbox button {
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.recruit .content .flexbox button a {
+  font-size: 20px;
 }
 
 /*==========================================================
@@ -1153,44 +1198,4 @@ footer .copyright {
 .mypage .mypage-nav .flexbox {
   max-width: 600px;
   margin: 0 auto;
-}
-
-/*==========================================================
- -- recruit --
-==========================================================*/
-.recruit > p {
-  margin-bottom: 60px;
-  text-align: center;
-}
-.recruit .content {
-  margin-bottom: 50px;
-}
-.recruit .content:last-child {
-  margin-bottom: 0;
-}
-.recruit .content .recruit_detail {
-  width: 100%;
-}
-.recruit .content .recruit_detail tr {
-  border: 1px solid;
-}
-.recruit .content .recruit_detail th {
-  width: 30%;
-  vertical-align: middle;
-  border: 1px solid;
-}
-.recruit .content .recruit_detail td {
-  width: 70%;
-  padding: 10px 20px;
-  border: 1px solid;
-}
-.recruit .content .flexbox button {
-  width: 40%;
-  height: 40px;
-  text-align: center;
-  margin-top: 50px;
-
-}
-.recruit .content .flexbox button a {
-  font-size: 20px;
 }
