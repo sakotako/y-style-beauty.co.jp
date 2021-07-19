@@ -352,7 +352,7 @@ footer .footer-reserve {
   width: 100%;
 }
 .staff-mini .staff-mini_content p {
-  font-size:14px; 
+  font-size:14px;
 }
 
 /*==========================================================
@@ -466,6 +466,9 @@ footer .footer-reserve {
 }
 .recruit .content .flexbox button {
   width: 70%;
+}
+.recruit .content .flexbox button:last-child {
+  margin-top: 20px;
 }
 
 /*==========================================================
