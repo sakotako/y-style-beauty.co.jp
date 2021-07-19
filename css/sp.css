@@ -70,6 +70,7 @@ overflow: hidden;
 }
 .burger-btn.close {
   color: #fff;
+  z-index: 5;
 }
 .burger-btn.close .bar_top {
   transform: translate(-50%,8px) rotate(45deg);
