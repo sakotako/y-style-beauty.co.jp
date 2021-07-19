@@ -449,6 +449,35 @@ footer .footer-reserve {
 }
 
 /*==========================================================
+ -- question --
+==========================================================*/
+.question.container {
+  padding-bottom: 30px;
+}
+.question .about-cut,
+.question .about-color,
+.question .about-item {
+  margin-top: 20px;
+}
+.question .h2_title {
+  position: relative;
+}
+.question .h2_title:after {
+  content: '\f067';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  line-height: 45px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+}
+.question .h2_title.on:after {
+  content: '\f068';
+}
+
+/*==========================================================
  -- sitemap --
 ==========================================================*/
 .sitemap .flexbox li {
