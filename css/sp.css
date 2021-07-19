@@ -193,6 +193,7 @@ footer .footer-reserve {
 }
 .pickup .flexbox li h3 {
   font-size: 18px;
+  padding-left: 5px;
 }
 .pickup .flexbox li.sns {
   border: none;
