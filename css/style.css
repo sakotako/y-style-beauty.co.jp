@@ -1092,6 +1092,7 @@ footer .copyright {
   justify-content: center;
 }
 .contact-form .formBtns input {
+  -webkit-appearance: none;
   width: 200px;
   height: 40px;
   margin: 0 20px;
