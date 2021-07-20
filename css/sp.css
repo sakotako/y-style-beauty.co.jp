@@ -70,7 +70,6 @@ overflow: hidden;
 }
 .burger-btn.close {
   color: #fff;
-  z-index: 5;
 }
 .burger-btn.close .bar_top {
   transform: translate(-50%,8px) rotate(45deg);
@@ -329,9 +328,6 @@ footer .footer-reserve {
 }
 .hair-smn li {
   width: 48%;
-}
-.hair-smn li:last-child {
-  margin-top: 50px;
 }
 
 /*==========================================================
