@@ -201,8 +201,8 @@
       <div class="container">
         <h2>キャンペーン情報</h2>
         <div class="flexbox">
-          <a class="inview fadeIn_up" href="campaign.html"><img src="src/1277521.png" alt=""></a>
-          <a class="inview fadeIn_up" href="campaign.html#open-campaign"><img src="src/1277521.png" alt=""></a>
+          <a class="inview fadeIn_up" href="campaign.html#open-campaign"><img src="src/campaign1.png" alt=""></a>
+          <a class="inview fadeIn_up" href="campaign.html#new-campaign"><img src="src/campaign2.png" alt=""></a>
         </div>
       </div>
     </section>
@@ -224,16 +224,16 @@
             <img src="src/4.jpg" alt="メンズ">
           </li>
           <li>
-            <img src="src/1.jpg" alt="ロング">
+            <img src="src/hair-detail7.jpg" alt="ロング">
           </li>
           <li>
-            <img src="src/2.jpg" alt="ミディアム">
+            <img src="src/asian-2111681_1920.jpg" alt="ミディアム">
           </li>
           <li class="sp_none">
-            <img src="src/3.jpg" alt="ショート">
+            <img src="src/hair-detail1.jpg" alt="ショート">
           </li>
           <li class="sp_none">
-            <img src="src/4.jpg" alt="メンズ">
+            <img src="src/hair-smn.jpg" alt="メンズ">
           </li>
         </ul>
         <button type="button" name="button"><a href="hair-catalog.html">もっと見る⇨</a></button>
@@ -453,27 +453,27 @@
   </footer>
 
   <script>
-/*if ($(window).width() > 768) {*/
-  $(function() {
-    $('.main-visual').vegas({
-    overlay: true,
-    transition: ['fade'],
-    transitionDuration:2000,
-    animation: 'kenburns',
-    slides: [
-      { src: 'src2/3214135_m.jpg' },
-      { src: 'src2/22004629_m.jpg' },
-      { src: 'src2/112304_m.jpg' },
-      { src: 'src2/3214157_m.jpg' }
-    ]
-    });
+$(function() {
+  $('.main-visual').vegas({
+  overlay: true,
+  transition: ['fade'],
+  transitionDuration:2000,
+  animation: 'kenburns',
+  slides: [
+    { src: 'src2/3214135_m.jpg' },
+    { src: 'src2/22004629_m.jpg' },
+    { src: 'src2/112304_m.jpg' },
+    { src: 'src2/3214157_m.jpg' }
+  ]
   });
-/*}*/
+});
 
 $(function(){
   $(".inview").on("inview", function (event, isInView) {
     if (isInView) {
       $(this).stop().addClass("is-show");
+    } else {
+      $(this).stop().removeClass("is-show");
     }
   });
 });
