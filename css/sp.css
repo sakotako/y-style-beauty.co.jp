@@ -442,8 +442,11 @@ footer .footer-reserve {
 .staff_detail .flexbox .staff_detail_content .staff_detail_content_flex.flexbox ul.staff-sns.flexbox {
   flex-direction: row;
 }
-.staff-style .hair-smn li:last-child {
-  margin-top: 0;
+.staff-style .hair-smn.flexbox li:nth-child(n+5) {
+  margin-bottom: 50px;
+}
+.staff-style .hair-smn.flexbox li:nth-child(n+7) {
+  margin-bottom: 0;
 }
 
 /*==========================================================
