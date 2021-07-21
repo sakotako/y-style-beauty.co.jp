@@ -927,11 +927,14 @@ footer .copyright {
   height: 40px;
 }
 .staff-style {
-  background-color: #F7F7F7; 
+  background-color: #F7F7F7;
 }
-.staff-style .flexbox {
+.staff-style .hair-smn.flexbox {
   flex-wrap: wrap;
   margin-top: 0;
+}
+.staff-style .hair-smn.flexbox li:nth-child(n+5) {
+  margin-bottom: 0;
 }
 
 /*==========================================================
